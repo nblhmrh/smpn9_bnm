@@ -13,6 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('sarangeyo');
-});
+Route::get('/program/kurikulum', [ProgramController::class, 'kurikulum']);
+Route::get('/bk/layanan', [BKController::class, 'layanan']);
+
